@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@theme {
+  --background-image-order-pattern-desktop: url('./assets/orderSummary/pattern-background-desktop.svg');
+  --background-image-order-pattern-mobile: url('./assets/orderSummary/pattern-background-mobile.svg');
+  --font-lexend: "Lexend Deca", sans-serif;
+  --font-big-shoulders: "Big Shoulders Display", sans-serif;
+  --font-outfit: "Outfit";
+}
