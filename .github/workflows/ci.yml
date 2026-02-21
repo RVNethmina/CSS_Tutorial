@@ -1,0 +1,34 @@
+name: React.js CI Pipeline
+
+# This tells GitHub when to run the script
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    # This tells GitHub to use a Linux server
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Download your code onto the Linux server
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # 3. Install your project dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Try to build the production version of your Next.js app
+      # If this fails (e.g., a broken React component), the pipeline will "turn red"
+      - name: Build React.js app
+        run: npm run build

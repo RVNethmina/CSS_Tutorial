@@ -40,7 +40,7 @@ const FaqAccordianMainComponent = () => {
     return (
 
         // In your FAQ Accordion, you used an absolute image inside a relative container. This is why the background pattern stayed at the top while your card remained centered in the middle of the page.
-        
+
         <div className="min-h-screen bg-[hsl(275,100%,97%)] font-['Work_Sans'] relative flex items-center justify-center p-6">
 
             <div className="absolute top-0 left-0 w-full h-[320px] z-0">
@@ -68,7 +68,9 @@ const FaqAccordianMainComponent = () => {
                             {/* Conditional Rendering: Only show if this ID is active */}
                             {
                                 activeId === item.id && (
-                                    <p className="mt-6 text-[16px] leading-relaxed text-[hsl(292,16%,49%)] animate-in fade-in slide-in-from-top-2 duration-300">{item.answers}</p>
+                                    <p className="mt-6 text-[16px] leading-relaxed text-[hsl(292,16%,49%)] animate-in fade-in slide-in-from-top-2 duration-300">
+                                        {item.answers}
+                                    </p>
                                 )
                             }
                         </div>
