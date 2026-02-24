@@ -8,13 +8,15 @@ import ThreeColumnPreviewCard from "./projects/threeColumnPreviewCard/ThreeColum
 import NftPreviewCard from "./projects/nftPreviewCard/NftPreviewCard";
 import InteractiveRatingComponent from "./projects/interactiveRatingComponent/InteractiveRatingComponent";
 import FaqAccordianMainComponent from "./projects/faqAccordianMainComponent/FaqAccordianMainComponent";
+import ArticlePreviewComponent from "./projects/articlePreviewComponent/ArticlePreviewComponent";
 import "./App.css";
 
 
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<FaqAccordianMainComponent />} />
+      <Route path='/' element={<ArticlePreviewComponent />} />
+      <Route path='/faq-accordian' element={<FaqAccordianMainComponent />} />
       <Route path='/rating-com' element={<InteractiveRatingComponent />}/>
       <Route path='/nft-component' element={<NftPreviewCard />}/>
       <Route path='/three-column' element={<ThreeColumnPreviewCard />} />
