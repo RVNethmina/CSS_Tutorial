@@ -11,13 +11,15 @@ import FaqAccordianMainComponent from "./projects/faqAccordianMainComponent/FaqA
 import ArticlePreviewComponent from "./projects/articlePreviewComponent/ArticlePreviewComponent";
 import IntroComponentSignUp from "./projects/introComponentSignUp/IntroComponentSignUp";
 import NewsLetterSignUp from "./projects/newsLetterSignUp/NewsLetterSignUp";
+import InteractiveCardDetailsForm from "./projects/interactiveCardDetailsForm/InteractiveCardDetailsForm";
 import "./App.css";
 
 
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<NewsLetterSignUp />}/>
+      <Route path='/' element={<InteractiveCardDetailsForm />}/>
+      <Route path='/news-letter' element={<NewsLetterSignUp />}/>
       <Route path='/intro-component' element={<IntroComponentSignUp />}/>
       <Route path='/article-preview' element={<ArticlePreviewComponent />} />
       <Route path='/faq-accordian' element={<FaqAccordianMainComponent />} />

@@ -10,10 +10,12 @@ body {
   --background-image-order-pattern-mobile: url('./assets/orderSummary/pattern-background-mobile.svg');
   --background-image-intro-component-desktop: url('./assets/introComponentSignUp/bg-intro-desktop.png');
   --background-image-intro-component-mobile: url('./assets/introComponentSignUp/bg-intro-mobile.png');
+
   --font-lexend: "Lexend Deca", sans-serif;
   --font-big-shoulders: "Big Shoulders Display", sans-serif;
   --font-outfit: "Outfit";
   --font-overpass: "Overpass";
   --font-manrope: "Manrope";
-  --font-roboto: "Roboto"
+  --font-roboto: "Roboto";
+  --font-space-grotest: "Space Grotesk;"
 }

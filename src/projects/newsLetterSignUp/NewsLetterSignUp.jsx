@@ -3,7 +3,7 @@ import iconList from "../../assets/newsLetterSignUp/icon-list.svg";
 import iconSuccess from "../../assets/newsLetterSignUp/icon-list.svg";
 import illustrationSignUpDesktop from "../../assets/newsLetterSignUp/illustration-sign-up-desktop.svg";
 import illustrationSignUpMobile from "../../assets/newsLetterSignUp/illustration-sign-up-mobile.svg";
-import illustrationSignUpTablet from "../../assets/newsLetterSignUp/illustration-sign-up-tablet.svg";
+
 
 const NewsLetterSignUp = () => {
   const [success, setSuccess] = useState(true);
@@ -48,7 +48,7 @@ const NewsLetterSignUp = () => {
             onClick={() => setSuccess(!success)}
             className="w-full p-4 bg-[hsl(234,29%,20%)] my-3 rounded-lg text-white text-[14px] cursor-pointer hover:bg-gradient-to-r from-[#ff527b] to-[#ff6a3a] hover:shadow-xl transition-all duration-300"
           >
-            Subscribe to monthly newsletter
+              Thank You
           </button>
         </div>
       </div>
