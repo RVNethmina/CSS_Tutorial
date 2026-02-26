@@ -9,13 +9,17 @@ import NftPreviewCard from "./projects/nftPreviewCard/NftPreviewCard";
 import InteractiveRatingComponent from "./projects/interactiveRatingComponent/InteractiveRatingComponent";
 import FaqAccordianMainComponent from "./projects/faqAccordianMainComponent/FaqAccordianMainComponent";
 import ArticlePreviewComponent from "./projects/articlePreviewComponent/ArticlePreviewComponent";
+import IntroComponentSignUp from "./projects/introComponentSignUp/IntroComponentSignUp";
+import NewsLetterSignUp from "./projects/newsLetterSignUp/NewsLetterSignUp";
 import "./App.css";
 
 
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<ArticlePreviewComponent />} />
+      <Route path='/' element={<NewsLetterSignUp />}/>
+      <Route path='/intro-component' element={<IntroComponentSignUp />}/>
+      <Route path='/article-preview' element={<ArticlePreviewComponent />} />
       <Route path='/faq-accordian' element={<FaqAccordianMainComponent />} />
       <Route path='/rating-com' element={<InteractiveRatingComponent />}/>
       <Route path='/nft-component' element={<NftPreviewCard />}/>
